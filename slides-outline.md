@@ -216,14 +216,25 @@ codebase-memory:告诉你"Auth 入口是 X,依赖 Y 和 Z"
 
 ## Slide 15(切换到模块 4):9 步流程图
 
+时间方向:① → ⑨ 顺序,三阶段(规划→开发→验证)。
+
 ```
-① user_story.md → ② design.md → ③ tasks.md
-                                       ↓
-⑨ openapi.yaml ← ⑧ e2e_report.md ← ⑦ api_test.log
-       ↑                                ↓
-       └──── ⑥ integration_test ← ⑤ reviewed_diff
-                                       ↑
-                                    ④ TDD
+规划阶段
+步骤   ① 需求澄清     ② 方案设计      ③ 任务规划
+      ──→           ──→           ──→
+产物   user_story.md design.md      tasks.md
+                              │
+                              ▼ (进入开发阶段)
+开发阶段
+步骤   ④ TDD 开发    ⑤ Code Review  ⑥ 集成测试
+      ──→           ──→           ──→
+产物   test + impl   reviewed diff  integration_test.log
+                              │
+                              ▼ (进入验证阶段)
+验证阶段
+步骤   ⑦ HTTP API    ⑧ 端到端测试    ⑨ 接口文档
+      ──→           ──→           ──→
+产物   api_test.log  e2e_report.md  openapi.yaml
 ```
 
 ---

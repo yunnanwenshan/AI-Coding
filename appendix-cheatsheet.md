@@ -27,14 +27,22 @@
 
 ## A.3 9 步闭环
 
+时间方向:① → ⑨ 顺序。三阶段:规划(①-③)→ 开发(④-⑥)→ 验证(⑦-⑨)。
+
 ```
-① user_story.md → ② design.md → ③ tasks.md
-                                       ↓
-⑨ openapi.yaml ← ⑧ e2e_report.md ← ⑦ api_test.log
-       ↑                                ↓
-       └──── ⑥ integration_test ← ⑤ reviewed_diff
-                                       ↑
-                                    ④ TDD
+步骤    ① 需求澄清      ② 方案设计       ③ 任务规划
+       ──→             ──→             ──→
+产物   user_story.md    design.md        tasks.md
+                                   │
+       ▼ (进入开发阶段)            ▼
+步骤    ④ TDD 开发       ⑤ Code Review   ⑥ 集成测试
+       ──→             ──→             ──→
+产物   test + impl      reviewed diff    integration_test.log
+                                   │
+       ▼ (进入验证阶段)            ▼
+步骤    ⑦ HTTP API 测试  ⑧ 端到端测试     ⑨ 接口文档
+       ──→             ──→             ──→
+产物   api_test.log     e2e_report.md    openapi.yaml
 ```
 
 ---
