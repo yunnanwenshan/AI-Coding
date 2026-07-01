@@ -1,4 +1,4 @@
-# 研发部 AI Coding 培训方案
+# 研发部 AI Coding 分享
 
 ## 目录
 
