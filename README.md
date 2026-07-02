@@ -14,7 +14,6 @@
 | [07-agent-dev.md](07-agent-dev.md) | 模块 7:Agent 开发(进阶) |
 | [08-founders-playbook.md](08-founders-playbook.md) | 模块 8:Anthropic 创业手册研讨 |
 | [appendix-cheatsheet.md](appendix-cheatsheet.md) | 附录:一页 A4 速查表 |
-| [slides-outline.md](slides-outline.md) | PPT 大纲 |
 
 ---
 
